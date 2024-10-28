@@ -1,0 +1,58 @@
+
+#TASK 1
+
+def joke_1():
+    joke = input("Why did the chicken cross the road? ").lower()
+    if joke == "to get to the other side":
+        print("\nYou're right!")
+    else:
+        print("\nTo get to the other side!")
+
+def joke_2():
+    joke = input("What did the fish say when it swam into a wall ").lower()
+    if joke == "dam":
+        print("\nYou're right!")
+    else:
+        print("\nDam!")
+
+def joke_3():
+    joke = input("What do you call a can opener that doesn't work? ").lower()
+    if joke == "a can't opener" or joke == "can't opener":
+        print("\nYou're right!")
+    else:
+        print("\nA can't opener!")
+
+joke_selection = int(input("Which joke do you want to hear? (1,2,3) "))
+if joke_selection == 1:
+    joke_1()
+elif joke_selection == 2:
+    joke_2()
+else:
+    joke_3()
+
+
+"""
+TASK 2
+
+Parameter passing is a technique used to transfer data between different parts of code.
+It allows functions to be more versatile and makes the code more efficient.
+
+To pass a parameter, you must first create a function. Here is an example form the task below:
+ ex. def multiplication_table(number):
+     In this function "number" is the parameter and it allows us to take an input,
+     "number = int(input("Choose a number: "))"
+     and then use that input in the multiplication_table function.
+
+"""
+
+# TASK 3
+
+def multiplication_table(number):
+    for i in range(1, 11):
+        multiplied_number = number * i
+        print(f"\n{number} x {i} = {multiplied_number}")
+
+number = int(input("Choose a number: "))
+multiplication_table(number)
+
+
