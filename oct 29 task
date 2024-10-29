@@ -1,0 +1,14 @@
+# 2024/10/29 TASK:
+
+global_var = "I am global!"
+
+def print_variables():
+    local_var = "I am local!"
+    print(global_var)
+    print(local_var)
+
+print_variables()
+print(local_var)
+
+# Trying to call a local variable outside of the function in which is was created 
+# returns an error saying that the variable is not defined. 
