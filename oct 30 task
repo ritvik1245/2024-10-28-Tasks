@@ -1,0 +1,17 @@
+# 2024/10/30 TASK:
+ 
+def square(num):
+    """
+    Calculates the square of an input number
+
+    Parameter:
+    num - int or float input to be squared 
+
+    Return:
+    Int or float of num squared
+    """
+    return num * num
+
+num = int(input("Choose a number: "))
+num_squared = square(num)
+print(num_squared)
