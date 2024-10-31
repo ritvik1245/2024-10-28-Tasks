@@ -1,0 +1,53 @@
+
+#2024/10/31 TASKS:
+
+"""
+TASK 1 - FINALLY
+
+Finally is a used in an try, except, else block and will execute regardless of whether 
+try finds an error or not. 
+
+
+"""
+
+#TASK 2 - Multiplication:
+while True:
+    try:
+        num = int(input("Choose a number: "))
+    except:
+        print("Invalid selection, please try again.")
+    else:
+        multiplied_num = num * 10
+        print(f"{num} x 10 = {multiplied_num}")
+        break
+
+#TASK 3 - Challenge:
+while True:
+    try:
+        num_1 = int(input("Choose a number: "))
+        num_2 = int(input("Choose another number: "))
+        while True:
+            operation = input("Choose an operation (+, -, *, /): ")
+            if operation == "+" or operation == "-" or operation == "*" or operation == "/":
+                break
+            else:
+                print("Invalid selection please try again")
+    except:
+        print("\nSomething went wrong, please try again")
+
+    else:
+        if operation == "+":
+            math = num_1 + num_2
+        elif operation == "-":
+            math = num_1 - num_2
+        elif operation == "*":
+            math = num_1 * num_2
+        elif operation == "/":
+            math = num_1 / num_2
+        print(f"{num_1} {operation} {num_2} = {math}")
+        
+    calculate_again = input("Would you like to use the calculator again? ('yes'/'no'): ")
+    if calculate_again == "yes":
+        print('')
+    else:
+        break
