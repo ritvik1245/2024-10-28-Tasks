@@ -13,7 +13,7 @@ try finds an error or not.
 #TASK 2 - Multiplication:
 while True:
     try:
-        num = int(input("Choose a number: "))
+        num = float(input("Choose a number: "))
     except:
         print("Invalid selection, please try again.")
     else:
@@ -24,8 +24,8 @@ while True:
 #TASK 3 - Challenge:
 while True:
     try:
-        num_1 = int(input("Choose a number: "))
-        num_2 = int(input("Choose another number: "))
+        num_1 = float(input("Choose a number: "))
+        num_2 = float(input("Choose another number: "))
         while True:
             operation = input("Choose an operation (+, -, *, /): ")
             if operation == "+" or operation == "-" or operation == "*" or operation == "/":
