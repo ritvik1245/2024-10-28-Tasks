@@ -1,0 +1,38 @@
+#2024/11/11 TASK:
+
+# Exercise 1:
+num = (1,2,3,4,5)
+
+print(len(num))
+# Returns length of sequence 
+
+print(min(num))
+# Returns lowest value
+
+print(sum(num))
+# Returns sum of values
+
+print(tuple(num))
+# Converts list or set to a tuple
+
+#Exercise 2:
+student_info = tuple(("Wayne", 21, "Computer Science", 3.8))
+print(f"Name: {student_info[0]}")
+print(f"Age: {student_info[1]}")
+print(f"Major: {student_info[2]}")
+print(f"GPA: {student_info[3]}")
+updated_student_info = tuple(("Wayne", 21, "Data Science", 3.8))
+
+#Exercise 3:
+scores = (88, 76, 90, 93, 85, 76, 90, 88, 92)
+
+print(max(scores))
+print(min(scores))
+
+print(scores.count(90))
+
+average = sum(scores) / len(scores)
+print(average)
+
+sorted_scores = sorted(scores)
+print(sorted_scores[-3:])
