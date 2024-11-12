@@ -1,0 +1,39 @@
+#2024/11/12 TASK:
+"""
+WHAT IS THE DIFFERENCE BETWEEN SETS, TUPLES AND LISTS?
+
+SETS: - Defined with curly brackets {}
+      - They are unordered
+      - Mutable
+
+TUPLES: - Defined with normal brackets ()
+        - Can store any type of data 
+        - Immutable
+
+LIST: - Defined with square brackets []
+      - Can store any type of data
+      - Mutable
+
+"""
+
+# 1
+colors = {"red", "green", "blue", "yellow"}
+print(colors)
+
+# 2 
+colors.add("purple")
+colors.remove("green")
+print(colors)
+
+# 3 
+primary_colors = {"red", "yellow", "blue"}
+secondary_colors = colors - primary_colors
+shared_colors = colors & primary_colors
+print(secondary_colors)
+print(shared_colors)
+
+# 4 
+if "orange" in colors:
+    print("Orange is in the colors set!")
+else:
+    print("Orange is not in the colors set.")
