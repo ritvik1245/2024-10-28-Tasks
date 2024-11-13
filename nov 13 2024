@@ -1,0 +1,17 @@
+# #2024/11/13 TASK:
+
+people_and_favorite_colors = {"Ivan": "red", "Kabi": "blue", "Michelle": "green"}
+print(people_and_favorite_colors)
+
+people_and_favorite_colors["David"] = "yellow"
+print(people_and_favorite_colors)
+
+people_and_favorite_colors["Kabi"] = "purple"
+print(people_and_favorite_colors)
+
+del people_and_favorite_colors["Ivan"]
+
+if "Michelle" in people_and_favorite_colors:
+    print("Michelle is in the dictionary")
+else:
+    print("Michelle is not in the dictionary")
